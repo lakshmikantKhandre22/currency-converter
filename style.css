@@ -1,0 +1,243 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#370938,#041c43);
+
+    padding:20px;
+}
+
+/* Container */
+
+.container{
+    width:100%;
+
+    max-width:420px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(10px);
+
+    padding:30px;
+
+    border-radius:24px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+    color:white;
+}
+
+/* Heading */
+
+h2{
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-size:2rem;
+}
+
+/* Form */
+
+form{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+/* Amount */
+
+.amount label{
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+}
+
+.amount input{
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    font-size:1rem;
+
+    background:rgba(255,255,255,0.15);
+
+    color:white;
+}
+
+.amount input::placeholder{
+    color:#ddd;
+}
+
+/* Dropdown */
+
+.dropdown{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+/* Currency Box */
+
+.currency-box{
+    flex:1;
+}
+
+/* Select Container */
+
+.select-container{
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:rgba(255,255,255,0.15);
+
+    padding:10px 12px;
+
+    border-radius:14px;
+
+    margin-top:8px;
+}
+
+.select-container img{
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+}
+
+.select-container select{
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:1rem;
+
+    cursor:pointer;
+}
+
+/* Dropdown Options */
+
+select option{
+    color:black;
+}
+
+/* Swap Icon */
+
+.swap-icon{
+    font-size:2rem;
+
+    margin-top:28px;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.swap-icon:hover{
+    transform:rotate(180deg) scale(1.2);
+
+    color:#38bdf8;
+}
+
+/* Message */
+
+.msg{
+    background:rgba(255,255,255,0.12);
+
+    padding:16px;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    font-size:1.1rem;
+
+    font-weight:500;
+}
+
+/* Button */
+
+button{
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+button:hover{
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    .container{
+        padding:22px;
+    }
+
+    h2{
+        font-size:1.7rem;
+    }
+
+    .dropdown{
+        flex-direction:column;
+    }
+
+    .swap-icon{
+        margin-top:0;
+    }
+}
